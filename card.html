@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .card{
+        height: 300px;
+        border: 5px rgb(30, 255, 0) solid;
+        width: 220px;
+        overflow: hidden;
+        /* position: relative; */
+    }
+    .card_img{
+        border: 1px  solid;
+        height: 290px;
+        background-image: linear-gradient(0deg,red,rgb(255, 17, 0));
+        background-image: url('/images/imgAbout.png');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+    .card_about{
+        box-sizing: border-box;
+        height: 300px;
+        width: 220px;
+        border: solid red ;
+        background: #48d392;
+        position: absolute;
+        bottom: 320px;
+        transition: .5s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card_about:hover{
+      /* margin-top: 200px; */
+      background: #2cfff4;
+      transition: .5s;
+      opacity: 0.8;
+
+    }
+    .cd_ti{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .cd_pa{
+        color: green;
+        font-size: 20px;
+    }
+  </style>
+  <body>
+    <div>
+      <div class="card">
+        <div class="card_img">saas</div>
+        <div class="card_about">
+          <div class="cd_ti">title</div>
+          <div class="cd_pa">para</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
